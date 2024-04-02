@@ -62,3 +62,24 @@ int main() {
     else if(g=='/')
         printf("%d %c %d= %d", num1, g, num2, num1 / num2);
 }
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    char g;
+    scanf("%d %c %d", &num1, &g, &num2);
+    switch(g){
+        case '+':
+        printf("%d %c %d= %d\n", num1, g, num2, num1 + num2);
+        break;
+    case '-':
+        printf("%d %c %d= %d\n", num1, g, num2, num1 - num2);
+        break;
+    case '*':
+        printf("%d %c %d= %d\n", num1, g, num2, num1 * num2);
+        break;
+    case '/':
+        printf("%d %c %d= %d", num1, g, num2, num1 / num2);
+        break;
+}
+}
